@@ -12,6 +12,11 @@ const template = `<!DOCTYPE html>
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <script >
+    var cw = document.documentElement.clientWidth ? document.documentElement.clientWidth : window.innerWidth;
+    var rootSize = cw / 10 + 'px';
+    document.querySelector('html').style.fontSize = rootSize;
+  </script>
 </head>
 <body :class="baseClass">
   <div id="app">${content}</div>

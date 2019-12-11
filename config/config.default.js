@@ -7,6 +7,11 @@ module.exports = app => {
     '/favicon.ico': fs.readFileSync(path.join(app.baseDir, 'app/web/asset/images/favicon.ico'))
   };
 
+  exports.apiHost = 'api.feedback.sogou'
+  // exports.apiHost = 'europa-test.thanos.sogou'
+  //   exports.apiHost = 'testapi.feedback.sogou'
+  //   exports.apiHost = '10.129.24.186:7777'
+
   exports.view = {
     cache: false
   };

@@ -1,0 +1,21 @@
+@function pxToRem($px) {
+  @return $px / 37.5px * 1rem;
+}
+
+.mint-button--large {
+  width: 50%;
+}
+
+.test {
+  box-sizing: border-box;
+  width: pxToRem(375px);
+  height: pxToRem(375px);
+  //width: 1440px;
+  //height: 1440px;
+  background: #fff;
+  div {
+    width: 50px;
+    height: 50px;
+    background: black;
+  }
+}

@@ -2,7 +2,8 @@ import Vue from 'vue';
 import '../filter';
 import '../directive';
 import '../component';
-
+import MintUI from 'mint-ui'
+Vue.use(MintUI)
 export default function(options) {
   Vue.prototype.$http = require('axios');
   if (options.store) {

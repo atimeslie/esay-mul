@@ -1,12 +1,11 @@
 <template>
-  <div class="main">
-    <div class="page-container page-component">
+  <div class="">
+    <div class="">
       <slot name="content"></slot>
     </div>
   </div>
 </template>
 <style>
-  @import "content.css";
 </style>
 <script type="text/babel">
   export default{

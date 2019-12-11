@@ -2,6 +2,9 @@
 module.exports = {
   egg: true,
   framework: 'vue',
+  cssModule: {
+      include: ['app/web/page', 'app/web/component'],
+  },
   entry: {
     include: ['app/web/page'],
     exclude: ['app/web/page/[a-z]+/component', 'app/web/page/test'],
@@ -19,7 +22,9 @@ module.exports = {
     vue: 'vue/dist/vue.esm.js'
   },
   dll: ['vue', 'axios'],
-  loaders: {},
+  loaders: {
+    scss: true,
+  },
   plugins: {},
   done() {
 

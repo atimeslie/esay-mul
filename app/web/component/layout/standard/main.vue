@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LayoutHeader></LayoutHeader>
+    <!--<LayoutHeader></LayoutHeader>-->
     <LayoutContent>
       <div slot="content">
         <slot name="main"></slot>
@@ -17,7 +17,7 @@
     text-decoration: none;
   }
 
-  @import "../../../asset/css/global.css";
+  /*@import "../../../asset/css/global.css";*/
 </style>
 <script type="text/babel">
   import LayoutHeader from './header/header';
